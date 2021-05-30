@@ -13,7 +13,6 @@ describe('<Text />', () => {
 
   it('it should be a span', () => {
     render(<Text type='span'>Teste de componente Texto</Text>);
-    
     const text = screen.getByTestId('Text');
     const textType = text.getElementsByTagName('span')
     console.log(textType)

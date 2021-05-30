@@ -2,10 +2,11 @@ require('dotenv').config();
 
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Blog Demo",
+    title: "perifaCode",
   },
   plugins: [
     'gatsby-plugin-postcss',
+    'gatsby-plugin-styled-components',
     {
       resolve: "gatsby-source-datocms",
       options: {

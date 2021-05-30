@@ -98,6 +98,7 @@ const getTextTag = ({
 
 export const Text = ({ children, size, transform, decoration, weight, color, type = 'span', lineHeight, ...rest }: TextProps) => (
   <>
-  {getTextTag({ children, size, transform, decoration, weight, color, type, lineHeight, ...rest })}
+  {getTextTag({ 
+    children, size, transform, decoration, weight, color, type, lineHeight, ...rest })}
   </>
 );

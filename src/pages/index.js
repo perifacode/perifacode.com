@@ -2,7 +2,7 @@ import React from "react";
 import Container from "../components/container";
 // import HeroPost from "../components/hero-post";
 // import Intro from "../components/intro";
-import { Text, Title } from "../components"
+import { Text, Title, Link } from "../components"
 // import MoreStories from "../components/more-stories";
 import { HelmetDatoCms } from "gatsby-source-datocms";
 import { graphql } from "gatsby";
@@ -19,7 +19,12 @@ export default function Index({ data: { allPosts, site, blog } }) {
       <Title level={3}>Título para renderizar na tela</Title>
       <Title level={4}>Título para renderizar na tela</Title>
       <Title level={5}>Título para renderizar na tela</Title>
+
+      <Link to="/404">Link pra home</Link>
+      <Link href="https://perifacode.com/">Link pra site véio</Link>
+      
       <Text>Texto para aparecer na tela</Text>
+
       {/* <Intro /> */}
       {/* {heroPost && (
         <HeroPost

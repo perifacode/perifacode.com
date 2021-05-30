@@ -2,7 +2,7 @@ import React from "react";
 import Container from "../components/container";
 // import HeroPost from "../components/hero-post";
 // import Intro from "../components/intro";
-import { Text } from "../components"
+import { Text, Title } from "../components"
 // import MoreStories from "../components/more-stories";
 import { HelmetDatoCms } from "gatsby-source-datocms";
 import { graphql } from "gatsby";
@@ -10,10 +10,15 @@ import { graphql } from "gatsby";
 export default function Index({ data: { allPosts, site, blog } }) {
   // const heroPost = allPosts.nodes[0];
   // const morePosts = allPosts.nodes.slice(1);
-
+  
   return (
     <Container>
       <HelmetDatoCms seo={blog.seo} favicon={site.favicon} />
+      <Title hasBG bgColor="yellow">Título para renderizar na tela</Title>
+      <Title level={2}>Título para renderizar na tela</Title>
+      <Title level={3}>Título para renderizar na tela</Title>
+      <Title level={4}>Título para renderizar na tela</Title>
+      <Title level={5}>Título para renderizar na tela</Title>
       <Text>Texto para aparecer na tela</Text>
       {/* <Intro /> */}
       {/* {heroPost && (

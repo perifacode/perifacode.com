@@ -1,5 +1,5 @@
 module.exports = {
-  "src/**/*.{ts,tsx}": ["prettier --write"]
+  "src/**/*.{ts,tsx}": ["prettier --write"],
   'linters': {
     '*.js': [
       'eslint'

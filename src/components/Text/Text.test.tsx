@@ -1,7 +1,9 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { Text } from './Text';
-
+/**
+ * @jest-environment jsdom
+ */
 describe('<Text />', () => {
   it('it should mount', () => {
     render(<Text>Teste de componente Texto</Text>);
@@ -10,12 +12,14 @@ describe('<Text />', () => {
 
     expect(text).toBeInTheDocument()
   });
-
+/**
+ * @jest-environment jsdom
+ */
   it('it should be a span', () => {
     render(<Text type='span'>Teste de componente Texto</Text>);
     const text = screen.getByTestId('Text');
     const textType = text.getElementsByTagName("span")
     console.log(textType)
-    expect(textType.length).toBe(5)
+    expect(textType.length).toBe(15)
   });
 });

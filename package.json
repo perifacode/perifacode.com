@@ -52,7 +52,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "kcd-scripts pre-commit"
+      "pre-commit": "lint-staged"
     }
   }
 }

@@ -16,7 +16,7 @@ export default function Index({ data: { allPosts, site, blog } }) {
       <HelmetDatoCms seo={blog.seo} favicon={site.favicon} />
       <Text>Texto para aparecer na tela</Text>
       {/* <Intro /> */}
-      {/* {heroPost && (
+      {heroPost && (
         <HeroPost
           title={heroPost.title}
           coverImage={heroPost.coverImage}
@@ -26,7 +26,7 @@ export default function Index({ data: { allPosts, site, blog } }) {
           excerpt={heroPost.excerpt}
         />
       )}
-      {morePosts.length > 0 && <MoreStories posts={morePosts} />} */}
+      {morePosts.length > 0 && <MoreStories posts={morePosts} />}
     </Container>
   );
 }

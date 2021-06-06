@@ -2,7 +2,7 @@ import React from "react";
 import Container from "../components/container";
 // import HeroPost from "../components/hero-post";
 // import Intro from "../components/intro";
-import { Text, Title } from "../components"
+import { Button, Text, Title } from "../components"
 // import MoreStories from "../components/more-stories";
 import { HelmetDatoCms } from "gatsby-source-datocms";
 import { graphql } from "gatsby";
@@ -20,6 +20,10 @@ export default function Index({ data: { allPosts, site, blog } }) {
       <Title level={4}>Título para renderizar na tela</Title>
       <Title level={5}>Título para renderizar na tela</Title>
       <Text>Texto para aparecer na tela</Text>
+      <Button onClick={() => null}>Inscreva-se</Button>
+      <Button btnFormat='inverse' onClick={() => null}>Inscreva-se</Button>
+      <Button btnFormat='alt' onClick={() => null}>Inscreva-se</Button>
+      <Button btnFormat='icon' icon='coffee' onClick={() => null}>Inscreva-se</Button>
       {/* <Intro /> */}
       {/* {heroPost && (
         <HeroPost
